@@ -23,6 +23,7 @@ pip install -r requirements.txt
 # cd到项目目录
 python3 app.py
 ```
+进入登录页面 http://localhost:5000/user/login
 
 使用账号admin，密码1234进行登录
 
@@ -146,7 +147,7 @@ python3 app.py
   - wordTotal.py		#热词计数
   - DataForWordCloud
 
-		  - B1.txt
+		- B1.txt
 
 		- B2Total.csv
 
