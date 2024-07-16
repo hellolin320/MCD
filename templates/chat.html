@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>预测</title>
+
+      <link rel="stylesheet" href="/static/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="/static/css/backend.css">  </head>
+      <body class="  ">
+        <div class="wrapper">
+            <div class="iq-sidebar  sidebar-default  ">
+                <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
+                   <a href="index.html" class="header-logo">
+                      <img src="/static/picture/mcd-logo.jpg" class="img-fluid rounded-normal light-logo" alt="logo">
+                      <span>门店评论系统</span>
+                  </a>
+                <div class="side-menu-bt-sidebar-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                          </svg>
+                </div>
+          </div>
+          <div class="data-scrollbar" data-scroll="1">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="side-menu">
+                    <li class=" sidebar-layout">
+                        <a href="/page/home" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                                </svg>
+                            </i>
+                            <span class="ml-2">首页界面</span>
+                        </a>
+                    </li>
+                    <li class=" sidebar-layout">
+                        <a href="/page/hotWord" class="svg-icon ">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </i>
+                            <span class="ml-2">热词界面</span>
+                        </a>
+                    </li>
+                    <li class=" sidebar-layout">
+                        <a href="/page/sentimentData0" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                                </svg>
+                            </i>
+                            <span class="ml-2">好评舆情</span>
+                        </a>
+                    </li>
+                    <li class=" sidebar-layout">
+                      <a href="/page/sentimentData1" class="svg-icon">
+                          <i class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                              </svg>
+                          </i>
+                          <span class="ml-2">中评舆情</span>
+                      </a>
+                  </li>
+                  <li class=" sidebar-layout">
+                      <a href="/page/sentimentData2" class="svg-icon">
+                          <i class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                              </svg>
+                          </i>
+                          <span class="ml-2">差评舆情</span>
+                      </a>
+                  </li>
+                    <li class=" sidebar-layout">
+                        <a href="/page/cloud" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                                </svg>
+                            </i>
+                            <span class="ml-2">词云界面</span>
+                        </a>
+                    </li>
+                    <li class=" sidebar-layout">
+                        <a href="/page/map" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path>
+                                </svg>
+                            </i><span class="ml-2">地图界面</span>
+                        </a>
+                    </li>
+                    <li class="active sidebar-layout">
+                        <a href="/page/chat" class="svg-icon">
+                            <i class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </i>
+                            <span class="ml-2">预测界面</span>
+                            <p class="mb-0 px-2 badge badge-pill badge-success">New</p>
+                        </a>
+                    </li>
+
+                    <li class=" sidebar-layout">
+                      <a href="/user/userData" class="svg-icon">
+                          <i class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                              </svg>
+                          </i>
+                          <span class="ml-2">账号管理</span>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="pt-5 pb-5"></div>
+      </div>
+      </div>
+      <div class="iq-top-navbar">
+        <div class="iq-navbar-custom">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="side-menu-bt-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary wrapper-menu" width="30" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="change-mode">
+                        <div class="custom-control custom-switch custom-switch-icon custom-control-inline">
+                            <div class="custom-switch-inner">
+                                <p class="mb-0"> </p>
+                                <input type="checkbox" class="custom-control-input" id="dark-mode" data-active="true">
+                                <label class="custom-control-label" for="dark-mode" data-mode="toggle">
+                                    <span class="switch-icon-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="h-moon" height="20" width="20" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="switch-icon-left">
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="h-sun" height="20" width="20" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary" width="30" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar-list align-items-center">
+                            <li class="nav-item nav-icon dropdown">
+                                <a href="#" class="nav-item nav-icon dropdown-toggle pr-0 search-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mb-0 ml-2 user-name">{{ username }}</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+
+                                    <li class="dropdown-item  d-flex svg-icon border-top">
+                                        <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                                        </svg>
+                                        <a href="/user/logout">登出</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+
+                   <div class="col-lg-4 chat-left-wrapper">
+                       <div class="chat-list">
+                          <div class="card">
+                             <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                   <h4 class="card-title">情感预测</h4>
+                                   <button class="btn text-primary bg-primary btn-sm d-block d-lg-none" data-toggel-extra="side-nav-close" data-expand-extra=".chat-left-wrapper">
+                                      <svg width="20" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                         <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      </svg>
+                                   </button>
+                                </div>
+                             </div>
+
+                             <div class="card-body item-list">
+                                <ul id="chat-list">
+                                   <li class="simple-item hover" data-toggle-extra="tab" data-target-extra="#user-content-1">
+                                       <div class="img-container">
+                                           <div class="avatar avatar-60">
+                                               <img src="/static/picture/FF.png" alt="users" class="img-fluid avatar-borderd avatar-rounded">
+                                               <span class="avatar-status">
+                                                   <i class="ri-checkbox-blank-circle-fill text-success">
+                                                       <small><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="18" viewbox="0 0 24 24" fill="none">
+                                                       <circle cx="12" cy="12" r="8" fill="#3cb72c"></circle></svg>
+                                                       </small>
+                                                   </i>
+                                               </span>
+                                           </div>
+                                       </div>
+                                       <div class="simple-item-body">
+                                           <div class="simple-item-title">
+                                                   <h5 class="title-text">Ernie模型</h5>
+                                           </div>
+                                           <div class="simple-item-content">
+                                               <span class="simple-item-text short">
+                                                   开心？生气？
+                                               </span>
+                                           <div class="dropdown">
+                                               <button class="btn btn-link " type="button" id="chat-dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="20" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                                                    </svg>
+                                               </button>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </li>
+                                </ul>
+                             </div>
+                          </div>
+                          </div>
+                    </div>
+                   <div class="col-lg-8 chat-right-wrapper">
+                       <div class="chat-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content" id="user-content-1">
+                           <div class="card">
+                               <div class="right-sidenav p-2" id="first-sidenav-1">
+                                   <div class="d-flex">
+                                       <button type="button" class="btn btn-sm" data-extra-dismiss="right-sidenav">
+                                           <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary" width="20" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                           </svg>
+                                       </button>
+                                   </div>
+                               </div>
+
+                               <div class="card-header chat-content-header">
+                               <div class="d-flex align-items-center">
+                                   <button class="btn text-primary bg-primary btn-sm d-block d-lg-none mr-2" data-toggel-extra="side-nav" data-expand-extra=".chat-left-wrapper">
+                                       <svg width="20" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path d="M19.75 11.7256L4.75 11.7256" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                           <path d="M13.7002 5.70124L19.7502 11.7252L13.7002 17.7502" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                   </button>
+                                   <div class="avatar-50 avatar-borderd avatar-rounded" data-toggel-extra="right-sidenav" data-target="#first-sidenav-1">
+                                       <img src="/static/picture/FF.png" alt="users" class="img-fluid">
+                                   </div>
+                                   <div class="chat-title">
+                                       <h6>Ernie模型</h6>
+                                       <small>Online</small>
+                                   </div>
+                               </div>
+                               </div>
+
+                               <div class="card-body msg-content" id="user-1-chat-content">
+                                    <div class="msg-list" id="response">
+                                        {% if sentiment_response %}
+                                        <div class="single-msg">
+                                            <div class="triangle-topleft single-msg-shap">
+                                            </div>
+                                            <div class="single-msg-content user">
+                                                <div class="msg-detail">
+                                                    <span id="response">{{ sentiment_response }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="card-footer px-3 py-3">
+                                    <form id="textFrom">
+                                        <div class="input-group">
+                                            <input id="inputText" class="form-control" placeholder="输入回车发送信息" onkeydown="sendTextOnEnter(event)"></input>
+                                            <!-- <button type="button" onclick="sendMessage()">提交</button> -->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="/static/js/backend-bundle.min.js"></script>>
+    <script src="/static/js/customizer.js"></script>
+    <script src="/static/js/sidebar.js"></script>
+    <script src="/static/js/flex-tree.min.js"></script>
+    <script src="/static/js/tree.js"></script>
+    <script src="/static/js/table-treeview.js"></script>
+    <script src="/static/js/sweetalert.js"></script>
+    <script src="/static/js/vector-map-custom.js"></script>
+    <script src="/static/js/chart-custom.js"></script>
+    <script src="/static/js/01.js"></script>
+    <script src="/static/js/02.js"></script>
+    <script src="/static/js/slider.js"></script>
+    <script src="/static/js/index.js" type="module"></script>
+    <script src="/static/js/app.js"></script>
+    <script>
+        function sendTextOnEnter(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                var inputText = document.getElementById("inputText").value;
+                sendMessage(inputText);
+            }
+        }
+    
+        function sendMessage(text) {
+            fetch('/chatchat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 更新页面上的情感分析结果显示区域
+                var responseDiv = document.getElementById("response");
+                responseDiv.innerHTML = `<div class="single-msg">
+                                            <div class="triangle-topleft single-msg-shap">
+                                            </div>
+                                            <div class="single-msg-content user">
+                                                <div class="msg-detail">
+                                                    <span id="response">${data}</span>
+                                                </div>
+                                            </div>
+                                        </div>`;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+    
+    
+    
+    </body>
+</html>

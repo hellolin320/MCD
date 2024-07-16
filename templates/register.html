@@ -1,0 +1,49 @@
+{% extends 'baselogin.html' %}
+{% block title %}
+    Register注册
+{% endblock %}
+
+{% block content %}
+                     <div class="card-body">
+                        <div class="auth-logo">
+                           <img src="/static/picture/mcd-logo.jpg" class="img-fluid rounded-normal light-logo" alt="logo">
+                        </div>
+                        <h3 class="mb-3 font-weight-bold text-center">注册</h3>
+                        <p class="text-center text-secondary mb-4">可视化系统</p>
+                        <div class="social-btn d-flex justify-content-around align-items-center mb-4">
+                        </div>
+                        <div class="mb-5">
+                            <p class="line-around text-secondary mb-0"><span class="line-around-1">键入用户名称和密码以注册</span></p>
+                        </div>
+                         <form method="POST" action="/user/register">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="form-group">
+                                    <label class="text-secondary">用户名称</label>
+                                    <input class="form-control" name="username" type="text" placeholder="Enter Username">
+                                 </div>
+                              </div>
+                              <div class="col-lg-12 mt-2">
+                                 <div class="form-group">
+                                     <div class="d-flex justify-content-between align-items-center">
+                                         <label class="text-secondary">用户密码</label>
+                                     </div>
+                                    <input class="form-control" name="password" type="password" placeholder="Enter Password">
+                                 </div>
+                              </div>
+                               <div class="col-lg-12 mt-2">
+                                 <div class="form-group">
+                                     <div class="d-flex justify-content-between align-items-center">
+                                         <label class="text-secondary">输入邮箱</label>
+                                     </div>
+                                    <input class="form-control" name="email" type="text" placeholder="Enter Email">
+                                 </div>
+                              </div>
+                           </div>
+                           <button type="submit" class="btn btn-primary btn-block mt-2">注册</button>
+                           <div class="col-lg-12 mt-3">
+                                <p class="mb-0 text-center">已有账号? <a href="login">点此登入</a></p>
+                           </div>
+                        </form>
+                     </div>
+{% endblock %}
